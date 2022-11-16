@@ -1,4 +1,4 @@
-console.log("Trying to access cliet side using the server side");
+
 
 const weatherForm=document.querySelector('form');
 const searchText=document.querySelector('input');

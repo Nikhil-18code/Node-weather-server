@@ -3,6 +3,7 @@ const express = require('express');
 const hbs=require('hbs'); 
 const forecast=require('./utils/forecast');
 const geocode=require('./utils/geocode');
+const port=process.env.PORT || 3000;
 
 const app=express();
 //A better way to serve HTML using node on the browser
@@ -94,6 +95,6 @@ app.get('*',(req,res)=>{
 // app.get('/help',(req,res)=>{
 //     res.send('This is help page');
 // })
-app.listen(3000,()=>{
-    console.log('The server is active on port: 3000');
+app.listen(port,()=>{
+    console.log('The server is active on port:'+port);
 })
